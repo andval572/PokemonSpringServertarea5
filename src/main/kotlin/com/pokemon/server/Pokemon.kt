@@ -5,6 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Pokemon (
     val abilities: List<Ability>,
+    var entrenador: String,
 
     @SerializedName("base_experience")
     val baseExperience: Long,
