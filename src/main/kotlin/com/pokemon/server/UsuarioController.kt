@@ -98,7 +98,7 @@ class UsuarioController(private val usuarioRepository: UsuarioRepository) {
 }
     return "Token no encontrado"
 }
-    @PostMapping("intercambiarPokemon/{tokenUsuario1}/{tokenUsuario2}/{pokemonId1}/{pokemonId2}}")
+    @PostMapping("intercambiarPokemon/{tokenUsuario1}/{tokenUsuario2}/{pokemonId1}/{pokemonId2}")
     fun intercambiarPokemon(@PathVariable tokenUsuario1: String,@PathVariable tokenUsuario2: String,@PathVariable pokemonId1: Int,@PathVariable pokemonId2: Int): Any{
 
         usuarioRepository.findAll().forEach { user1 ->
